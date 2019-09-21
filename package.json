@@ -6,7 +6,7 @@
     "tslint": "^5.20.0",
     "typescript": "^3.6.3"
   },
-  "husky":{
-    "pre-commit":"yarn tslint -c tslint.json 'src/**/*.ts'"
+  "husky": {
+    "pre-commit": "yarn tslint -c tslint.json 'src/**/*.ts'"
   }
 }
