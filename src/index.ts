@@ -1,1 +1,4 @@
-console.log(`hello world`);
+import "reflect-metadata";
+import { createConnection } from "typeorm";
+
+createConnection();
