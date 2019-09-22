@@ -1,11 +1,23 @@
 {
    "devDependencies": {
+      "@babel/core": "^7.5.5",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
+      "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+      "@babel/plugin-transform-regenerator": "^7.4.5",
+      "@babel/plugin-transform-runtime": "^7.5.5",
+      "@babel/polyfill": "^7.4.4",
+      "@babel/preset-env": "^7.5.5",
+      "@babel/preset-react": "^7.0.0",
+      "@babel/register": "^7.5.5",
       "@types/node": "^8.0.29",
       "husky": "^3.0.5",
       "ts-node": "3.3.0",
       "tslint": "^5.20.0",
       "typeorm": "^0.2.19",
       "typescript": "3.3.3333"
+   },
+   "script": {
+      "start": "yarn ts-node src/index.ts"
    },
    "husky": {
       "hooks": {
