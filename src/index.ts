@@ -28,7 +28,7 @@ router.get("", async (req, res, next) => {
 
 router.post("", async (req, res, next) => {
   const workItem = new WorkItem();
-  workItem.text = req.body.text;
+  workItem.content = req.body.content;
   const workItemRepository = getManager().getRepository(WorkItem);
   try {
     res.json(await workItemRepository.save(workItem));
@@ -56,7 +56,7 @@ router.delete("/:id", async (req, res, next) => {
     await workItemRepository.delete(req.params.id);
     res.sendStatus(204);
   } catch (error) {
-      next(error);
+    next(error);
   }
 });
 

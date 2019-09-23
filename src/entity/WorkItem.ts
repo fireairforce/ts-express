@@ -8,18 +8,18 @@ import {
 
 @Entity()
 export class WorkItem {
-    @PrimaryGeneratedColumn()
-    public id: number;
+  @PrimaryGeneratedColumn()
+  public id: number;
 
-    @Column({length: 100})
-    public text: string;
+  @Column({ length: 100 })
+  public content: string;
 
-    @Column({default: false})
-    public isChecked: boolean;
+  @Column({ default: false })
+  public isChecked: boolean;
 
-    @CreateDateColumn({ type: "date" })
-    public createAt: Date;
+  @CreateDateColumn({ type: "date" })
+  public createAt: Date;
 
-    @UpdateDateColumn({type: "date"})
-    public updateAt: Date;
+  @UpdateDateColumn({ type: "date" })
+  public updateAt: Date;
 }
